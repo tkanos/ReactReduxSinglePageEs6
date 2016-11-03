@@ -13,7 +13,9 @@ TODO :
 - Create First Component
 
 - What is Redux
+- talk about immutability
 - create actions
-- create imutable store
 - create reducers
+- create store
+- connect store
 - How it works
