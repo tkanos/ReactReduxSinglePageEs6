@@ -200,7 +200,7 @@ As you can see, we get our routes, and we replace the div id app, by our renderi
 
 That it. We can npm start our project to be able to see our components rendered.
 
-# What is Reduxs
+# What is Redux
 
 TODO :
 
