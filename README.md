@@ -202,8 +202,7 @@ That it. We can npm start our project to be able to see our components rendered.
 
 # What is Redux
 
-TODO :
-
+TODO : 
 
 - What is Redux
 - talk about immutability
@@ -212,3 +211,27 @@ TODO :
 - create store
 - connect store
 - How it works
+
+# Add a Fake Api
+
+TODO :
+
+# Add a button to rate the beer
+
+TODO :
+
+# Add a button to update the beer name (on a new page)
+
+TODO :
+
+# How to Test React
+
+TODO :
+
+# How to Test Redux
+
+TODO :
+
+# How To deploy on production
+
+TODO :
