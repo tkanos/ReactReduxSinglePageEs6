@@ -216,6 +216,10 @@ TODO :
 
 TODO :
 
+# Separate the HomePage render on various little beer components
+
+TODO :
+
 # Add a button to rate the beer
 
 TODO :
