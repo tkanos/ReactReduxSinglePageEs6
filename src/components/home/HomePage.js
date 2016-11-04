@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 import * as beerActions from '../../actions/beerActions';
 
 class HomePage extends React.Component {
@@ -23,7 +24,7 @@ class HomePage extends React.Component {
   }
 
   onClickSave() {
-    this.props.dispatch(beerActions.createBeer(this.state.beer));
+    this.props.actions.createBeer(this.state.beer); //actions come from mapDispatchToProps
   }
 
   beerRow(beer, index) {
@@ -48,7 +49,7 @@ class HomePage extends React.Component {
 
 HomePage.propTypes = {
   beers: PropTypes.array.isRequired,
-  dispatch: PropTypes.func.isRequired
+  actions: PropTypes.func.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
@@ -57,10 +58,10 @@ function mapStateToProps(state, ownProps) {
   };
 }
 
-/*function mapDispatchToProps(dispatch) {
+function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(courseActions, dispatch)
+    actions: bindActionCreators(beerActions, dispatch)
   };
-}*/
+}
 
-export default connect(mapStateToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
